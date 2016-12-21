@@ -1,0 +1,21 @@
+{
+  "name": "filereader",
+  "version": "1.0.0",
+  "description": "Read files from a folder",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "nyc --show-process-tree tape test"
+  },
+  "author": "Mark Robson",
+  "license": "MIT",
+  "devDependencies": {
+    "mock-fs": "^3.12.1",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "array-flatten": "^2.1.0"
+  }
+}
