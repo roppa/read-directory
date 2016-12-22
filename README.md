@@ -1,5 +1,7 @@
 #read-directory
 
+[![Build Status](https://travis-ci.org/roppa/read-directory.svg?branch=master)](https://travis-ci.org/roppa/read-directory)
+
 Read a folder recursively and get a list of all files.
 
 ##readDirectory('path/to/folder'[,ignoreObject])
