@@ -1,5 +1,5 @@
 {
-  "name": "read-directory",
+  "name": "readiry",
   "version": "1.0.0",
   "description": "Read files from a directory",
   "main": "index.js",
