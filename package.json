@@ -1,7 +1,7 @@
 {
-  "name": "filereader",
+  "name": "read-directory",
   "version": "1.0.0",
-  "description": "Read files from a folder",
+  "description": "Read files from a directory",
   "main": "index.js",
   "directories": {
     "test": "test"
