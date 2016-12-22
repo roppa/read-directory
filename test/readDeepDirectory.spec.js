@@ -36,7 +36,7 @@ test('Build', t => {
 
 test('readDeepDirectory function', assert => {
 
-  assert.plan(5);
+  assert.plan(8);
 
   fr.readDeepDirectory()
     .catch(error => {
@@ -52,8 +52,16 @@ test('readDeepDirectory function', assert => {
   fr.readDeepDirectory('files', { xyz: null })
     .then(result => {
       assert.equals(Array.isArray(result), true, 'should return an array');
-      assert.equals(result.length, 10, 'should be 3 elements');
+      assert.equals(result.length, 10, 'should be 10 elements');
     });
+
+  fr.readDeepDirectory('files', { xyz: null }, fileObj => ({ filePath: fileObj.file }))
+    .then(result => {
+      assert.equals(Array.isArray(result), true, 'should return an array');
+      assert.equals(result.length, 10, 'should be 3 elements');
+      assert.equals(result[0].hasOwnProperty('filePath'), true, 'should massage data');
+    });
+
 });
 
 test('Teardown', t => {
