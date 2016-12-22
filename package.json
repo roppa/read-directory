@@ -13,13 +13,14 @@
   "license": "MIT",
   "devDependencies": {
     "mock-fs": "^3.12.1",
+    "nyc": "^10.0.0",
     "tape": "^4.6.3"
   },
   "dependencies": {
     "array-flatten": "^2.1.0"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com:roppa/read-directory.git"
+    "type": "git",
+    "url": "https://github.com:roppa/read-directory.git"
   }
 }
