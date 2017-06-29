@@ -1,5 +1,3 @@
-'use strict';
-
 const fsMock = require('mock-fs');
 const test = require('tape').test;
 let fr = require('../');
