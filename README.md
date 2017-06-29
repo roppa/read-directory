@@ -1,4 +1,4 @@
-#read-directory
+# read-directory
 
 [![Build Status](https://travis-ci.org/roppa/read-directory.svg?branch=master)](https://travis-ci.org/roppa/read-directory)
 
@@ -10,7 +10,7 @@ Read a folder recursively and get a list of all files.
 
 Where ignoreObject is something like:
 
-```
+```javascript
 {
   pdf: null,
   doc: null,
@@ -20,14 +20,14 @@ Where ignoreObject is something like:
 
 Returns a promise which resolves an array of file paths.
 
-##readDeepDirectory('path/to/folder'[,ignoreObject,readCallback])
+## readDeepDirectory('path/to/folder'[,ignoreObject,readCallback])
 
 Returns a promise which resolves an array of file paths.
 
 If a callback is supplied, the stat object is returned along with a 'file' attribute with the full file path.
 
-##Test
+## Test
 
-```
+```javascript
 npm run test
 ```
